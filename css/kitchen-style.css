@@ -1,0 +1,97 @@
+/* @override 
+  http://planetoftheweb.com/_/css/styles.css */
+
+@import url("http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather:400,300,700,900|Droid+Sans:400,700");
+
+/* Reset Styles */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+#container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.outline {
+    outline: 1px solid #000000;
+}
+
+/*--------------------------------Table-CSS------------------------------------*/
+
+.resto-tables {
+    padding: 20px;
+    background-color: #c8c8c8;
+}
+
+    .resto-tables .breaker {
+        padding-top: 20px;
+    }
+
+        .resto-tables .breaker:last-child {
+            padding-top: 0;
+        }
+
+.resto-table {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: #898989;
+    color: #000000;
+}
+
+    .resto-table.order-placed {
+        background-color: #009966;
+        cursor: pointer;
+    }
+
+    .resto-table.service-reqd {
+        background-color: #3366ff;
+        cursor: pointer;
+    }
+
+    .resto-table.service-reqd, .resto-table.order-placed.service-reqd {
+        background-color: #3366ff;
+    }
+
+    .resto-table .resto-table-content {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .resto-table + .resto-table {
+        margin-left: 20px;
+    }
+
+    .resto-table .resto-table-content .resto-table-number {
+        text-align: center;
+    }
+
+/*----------------order modal--------------------*/
+
+#order-placed-modal .order-title {
+    font-weight: bold;
+}
